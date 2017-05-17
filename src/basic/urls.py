@@ -14,8 +14,24 @@ Including another URLconf
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
 from django.conf.urls import url
+from django.conf import settings
+from django.conf.urls.static import static
 from django.contrib import admin
+from apps.songs_artists.views import BandsListView, BandsDetailView, SongsListView, SongsDetailView
 
 urlpatterns = [
+
+    # Bands
+    url(r'^$', BandsListView.as_view(), name='home'),
+    url(r'^bands/(?P<pk>\d+)/$', BandsDetailView.as_view(), name='bands'),
+
+
+    # Songs
+    url(r'^songs/(?P<pk>\d+)/$', SongsDetailView.as_view(), name='songs'),
+
+
+    # Admin
     url(r'^admin/', admin.site.urls),
-]
+
+]   + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)+ static\
+    (settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% load static from staticfiles %}
+
+{% block meta_title %}Текст{% endblock meta_title %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="page-header text-center">
+          <h1>{{ object.song_name }}<small> {{ object.artist }}</small></h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
+            <ul class="list-group text-center">
+              <li class="list-group-item">{{ object.song_lyrics }}</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

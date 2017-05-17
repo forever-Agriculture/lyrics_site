@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% load static from staticfiles %}
+
+{% block meta_title %}Головна{% endblock meta_title %}
+
+{% block content %}
+
+<!--start artists-->
+<div class="container">
+    <div class="row">
+      {% for band in bands_list %}
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          {% if band.photo %}
+          <img src="{{ band.photo.url }}" alt="...">
+          {% else %}
+          <img src="{% static "this/img/2.jpeg" %}" alt="...">
+          {% endif %}
+          <div class="caption">
+            <h3>{{ band.band_name }}</h3>
+            <p><a href="{% url "bands" band.id %}" class="btn btn-primary" role="button">Перейти</a></p>
+          </div>
+        </div>
+      </div>
+       {% endfor %}
+    </div>
+</div>
+
+<!--end artists-->
+<!--start pagination-->
+{% if page_obj.has_other_pages %}
+<nav class="customPag" aria-label="Page navigation">
+    <ul class="pagination pagination-lg">
+        {% if page_obj.has_previous %}
+        <li>
+            <a aria-label="Previous" href="{% url "home" %}?page={{ page_obj.previous_page_number }}">
+            <span aria-hidden="true">&laquo;</span>
+            </a>
+        </li>
+        {% endif %}
+
+        {% for band in bands_range %}
+        <li class="{% if page_obj.number == forloop.counter %} active {% endif %}">
+            <a href="{% url "home" %}?page={{ forloop.counter }}">{{ forloop.counter }}</a>
+        </li>
+        {% endfor %}
+
+        {% if page_obj.has_next %}
+        <li>
+            <a aria-label="Next" href="{% url "home" %}?page={{ page_obj.previous_page_number }}">
+            <span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
+        {% endif %}
+    </ul>
+</nav>
+{% endif %}
+<!--end pagination-->
+
+{% endblock content %}
