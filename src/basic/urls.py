@@ -17,13 +17,13 @@ from django.conf.urls import url
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
-from apps.songs_artists.views import BandsListView, BandsDetailView, SongsListView, SongsDetailView
+from apps.songs_artists.views import BandsListView, SongslistView, SongsDetailView
 
 urlpatterns = [
 
     # Bands
     url(r'^$', BandsListView.as_view(), name='home'),
-    url(r'^bands/(?P<pk>\d+)/$', BandsDetailView.as_view(), name='bands'),
+    url(r'^bands/(?P<pk>\d+)/$', SongslistView.as_view(), name='bands'),
 
 
     # Songs

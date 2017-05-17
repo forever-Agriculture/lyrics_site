@@ -23,7 +23,7 @@ class BandsListView(ListView):
         return context
 
 
-class BandsDetailView(ListView):
+class SongslistView(ListView):
     """..."""
     template_name = 'band.html'
     model = Lyrics
@@ -31,19 +31,6 @@ class BandsDetailView(ListView):
 
 
 # Songs
-class SongsListView(ListView):
-    """..."""
-    template_name = 'band.html'
-    model = Lyrics
-    context_object_name = 'songs_list'
-
-    # def get_context_data(self, **kwargs):
-    #     context = super(SongsListView, self).get_context_data(**kwargs)
-    #     context['search'] = Lyrics.objects.annotate(search=SearchVector('song_name', 'artist'),
-    #                                                 ).filter(search=search_field)
-    #     return context
-
-
 class SongsDetailView(DetailView):
     """..."""
     template_name = 'text.html'
