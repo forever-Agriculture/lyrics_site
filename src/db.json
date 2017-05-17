@@ -1,0 +1,691 @@
+[
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "songs_artists",
+    "model": "band"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "songs_artists",
+    "model": "lyrics"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "7ac0tvblu5hyr51covsj8vre3pl399z5",
+  "fields": {
+    "session_data": "ZTE1MGNkNDIzZTE0YjI4NzQwYzJiYmRjMjk0OTY5YmY5ZmM5YzEyNDp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJmYjZiOTJiMDdlMjA1Yzg3NzAyMGE5YzY4NDA0YzJiMTJjNjhkZDVhIn0=",
+    "expire_date": "2017-05-26T13:12:38.217Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "cvzr3xt00hizlr2ymjplqdeic0e7xpn6",
+  "fields": {
+    "session_data": "YjEzOTljMmI4M2Q3ZjVhMWU3MmZiMzcxMjY0MzNjMDc5MzU5OTUxMjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI5Y2Y5YjE1NjJiNDVlM2E5M2YyZTAxNjUwZGFkNTQxMGIwMDRmYWQyIn0=",
+    "expire_date": "2017-05-31T16:05:30.048Z"
+  }
+},
+{
+  "model": "songs_artists.band",
+  "pk": 9,
+  "fields": {
+    "band_name": "\u0412\u0438\u043a\u043e\u043d\u0430\u0432\u0435\u0446\u044c 1",
+    "photo": "",
+    "notes": "\u041e\u043e\u0438\u0442\u0443\u0430\u0444 \u0438\u0443\u0430\u0442 \u043e\u0443\u0432\u0441\u044c \u043b \u0432\u043e\u0439\u0442\u0432\u043e\u0442\u0446\u043e\u0442\u043c \u0432\u0442\u0432\u043e\u0430\u0442\u043b\u0442\u0432\u0434",
+    "song": []
+  }
+},
+{
+  "model": "songs_artists.band",
+  "pk": 10,
+  "fields": {
+    "band_name": "\u0412\u0438\u043a\u043e\u043d\u0430\u0432\u0435\u0446\u044c 2",
+    "photo": "",
+    "notes": "\u0420\u0443\u043e\u0430\u0446\u043b\u0441\u0431  \u0439\u0441\u0432 \u0442\u0432\u0442\u0446 \u043e\u0446\u0442\u0430\u043e23\u0449\u043a\u0430 \u0430\u0442\u0438\u044c\u0430\u0442\u0446\u0432\u04393\u0445\u04374 \u0446",
+    "song": []
+  }
+},
+{
+  "model": "songs_artists.band",
+  "pk": 11,
+  "fields": {
+    "band_name": "\u0412\u0438\u043a\u043e\u043d\u0430\u0432\u0435\u0446\u044c 3",
+    "photo": "",
+    "notes": "\u041b\u0432\u0444\u0442 \u043b\u0444\u0446\u0432 \u043b\u0444\u043b\u0432\u044c \u043b\u0444\u0446\u0432\u044c \u0444\u0444",
+    "song": []
+  }
+},
+{
+  "model": "songs_artists.band",
+  "pk": 12,
+  "fields": {
+    "band_name": "\u0412\u0438\u043a\u043e\u043d\u0430\u0432\u0435\u0446\u044c 4",
+    "photo": "",
+    "notes": "\u041e\u0444\u0446\u0449\u043c \u0432\u0444 \u0446\u043e\u0432\u0441\u0444 \u0432\u0442\u0444\u0442\u0432\u04423\u0448\u0446\u0442\u0430 \u0446\u04333 \u0430\u0442\u0432\u0442\u044c\u0432 \u0432\u0444\u043b\u043e\u0432\u0442\u0444\u0432 \u0442\u0444\u0443\u0442\u0444\u0432\u043e \u0444\u0442\u04323\u0442\u0432 \u0444 \u0432\u0442\u0432\u0442 3\u0444\u043e3\u0442\u0432",
+    "song": []
+  }
+},
+{
+  "model": "songs_artists.band",
+  "pk": 13,
+  "fields": {
+    "band_name": "\u0412\u0438\u043a\u043e\u043d\u0430\u0432\u0435\u0446\u044c 5",
+    "photo": "",
+    "notes": "\u0428\u043e\u0430\u0432 \u0442\u0444\u0446\u0432\u0442\u0444 \u0442\u0446\u0432\u0444\u0442\u0432\u0444 3\u0442\u0444 \u0432\u043e\u0444\u0434\u0442 4\u0430 \u04444\u0430\u0442\u0444\u043e\u043b\u0430\u0442",
+    "song": []
+  }
+},
+{
+  "model": "songs_artists.band",
+  "pk": 14,
+  "fields": {
+    "band_name": "\u0412\u0438\u043a\u043e\u043d\u0430\u0432\u0435\u0446\u044c 6",
+    "photo": "",
+    "notes": "\u0419\u0444\u0442\u0444 \u0444\u0432\u0442 \u0444\u0432 \u0442\u043e\u0442\u04322 \u0430\u043e\u0432 23\u044239\u0446 \u0442\u0446 9",
+    "song": []
+  }
+},
+{
+  "model": "songs_artists.band",
+  "pk": 15,
+  "fields": {
+    "band_name": "\u0412\u0438\u043a\u043e\u043d\u0430\u0432\u0435\u0446\u044c 7",
+    "photo": "",
+    "notes": "\u0420\u0432\u0444\u0446\u0432\u0456\u04443 \u0439 \u0432\u0444\u0441\u0431\u044c3",
+    "song": []
+  }
+},
+{
+  "model": "songs_artists.lyrics",
+  "pk": 4,
+  "fields": {
+    "song_name": "False Pretense 1",
+    "song_lyrics": "The world's got a funny way of turning round on you\r\nWhen a friend tries to stab you right in the face\r\nLosing faith in everything I hoped and knew\r\nDon't sweat it; set off false pretense\r\n\r\nBetray, you're not gonna be willing to change\r\nYeah, and it doesn't seem likely to fade\r\nBetray, you're not gonna be willing to change\r\n'Cause you know\r\n\r\nAll alone you know you've got, you've got the best of me\r\nYou were wrong, and I'm laughing right in your face\r\nI cannot believe you blamed; you were my family\r\nDon't sweat it; set off false pretense\r\n\r\nBetray, you're not gonna be willing to change\r\nYeah, and it doesn't seem likely to fade\r\nBetray, you're not gonna be willing to change\r\n'Cause you know\r\n\r\nI can't seem to understand it, how you've turned out to be so cold\r\nIt's funny to me how you've turned into such a joke",
+    "artist": 9
+  }
+},
+{
+  "model": "songs_artists.lyrics",
+  "pk": 5,
+  "fields": {
+    "song_name": "False Pretense 2",
+    "song_lyrics": "The world's got a funny way of turning round on you\r\nWhen a friend tries to stab you right in the face\r\nLosing faith in everything I hoped and knew\r\nDon't sweat it; set off false pretense\r\n\r\nBetray, you're not gonna be willing to change\r\nYeah, and it doesn't seem likely to fade\r\nBetray, you're not gonna be willing to change\r\n'Cause you know\r\n\r\nAll alone you know you've got, you've got the best of me\r\nYou were wrong, and I'm laughing right in your face\r\nI cannot believe you blamed; you were my family\r\nDon't sweat it; set off false pretense\r\n\r\nBetray, you're not gonna be willing to change\r\nYeah, and it doesn't seem likely to fade\r\nBetray, you're not gonna be willing to change\r\n'Cause you know\r\n\r\nI can't seem to understand it, how you've turned out to be so cold\r\nIt's funny to me how you've turned into such a joke",
+    "artist": 9
+  }
+},
+{
+  "model": "songs_artists.lyrics",
+  "pk": 6,
+  "fields": {
+    "song_name": "False Pretense 3",
+    "song_lyrics": "The world's got a funny way of turning round on you\r\nWhen a friend tries to stab you right in the face\r\nLosing faith in everything I hoped and knew\r\nDon't sweat it; set off false pretense\r\n\r\nBetray, you're not gonna be willing to change\r\nYeah, and it doesn't seem likely to fade\r\nBetray, you're not gonna be willing to change\r\n'Cause you know\r\n\r\nAll alone you know you've got, you've got the best of me\r\nYou were wrong, and I'm laughing right in your face\r\nI cannot believe you blamed; you were my family\r\nDon't sweat it; set off false pretense\r\n\r\nBetray, you're not gonna be willing to change\r\nYeah, and it doesn't seem likely to fade\r\nBetray, you're not gonna be willing to change\r\n'Cause you know\r\n\r\nI can't seem to understand it, how you've turned out to be so cold\r\nIt's funny to me how you've turned into such a joke",
+    "artist": 9
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$36000$bdf10INxVPHQ$pK6vkc4qY0Zy6WudjRQI8SWqogG6zUcMBZ6TNYMpeWk=",
+    "last_login": "2017-05-17T16:05:30.039Z",
+    "is_superuser": true,
+    "username": "lyrics_user",
+    "first_name": "",
+    "last_name": "",
+    "email": "empty777777@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2017-05-12T11:03:37.778Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2017-05-12T11:14:40.209Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Band object",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2017-05-12T11:15:37.960Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Band object",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2017-05-12T11:16:01.974Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Band object",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2017-05-12T11:16:27.921Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "Band object",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2017-05-12T11:16:48.469Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "Band object",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2017-05-12T11:17:10.634Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "Band object",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2017-05-12T13:34:19.599Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "Band object",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2017-05-12T16:18:25.777Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "\u0412\u0438\u043a\u043e\u043d\u0430\u0432\u0435\u0446\u044c 7",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2017-05-12T16:20:59.896Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "\u0412\u0438\u043a\u043e\u043d\u0430\u0432\u0435\u0446\u044c 7",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2017-05-12T16:30:41.784Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "8",
+    "object_repr": "\u0412\u0438\u043a\u043e\u043d\u0430\u0432\u0435\u0446\u044c 7",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2017-05-12T19:09:55.149Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "\u041f\u0456\u0441\u0435\u043d\u044c\u043a\u0430 1 \u0412\u0438\u043a\u043e\u043d\u0430\u0432\u0435\u0446\u044c 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2017-05-12T19:10:11.197Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "\u041f\u0456\u0441\u0435\u043d\u044c\u043a\u0430 2 \u0412\u0438\u043a\u043e\u043d\u0430\u0432\u0435\u0446\u044c 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2017-05-12T19:10:27.319Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "\u041f\u0456\u0441\u0435\u043d\u044c\u043a\u0430 3 \u0412\u0438\u043a\u043e\u043d\u0430\u0432\u0435\u0446\u044c 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2017-05-12T19:15:13.092Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "\u041f\u0456\u0441\u0435\u043d\u044c\u043a\u0430 1 \u0412\u0438\u043a\u043e\u043d\u0430\u0432\u0435\u0446\u044c 1",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"song_lyrics\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2017-05-12T19:15:52.242Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "\u041f\u0456\u0441\u0435\u043d\u044c\u043a\u0430 1 \u0412\u0438\u043a\u043e\u043d\u0430\u0432\u0435\u0446\u044c 1",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"song_lyrics\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2017-05-17T16:15:57.625Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "\u041f\u0456\u0441\u0435\u043d\u044c\u043a\u0430 3 \u0412\u0438\u043a\u043e\u043d\u0430\u0432\u0435\u0446\u044c 1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2017-05-17T16:15:57.654Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "\u041f\u0456\u0441\u0435\u043d\u044c\u043a\u0430 2 \u0412\u0438\u043a\u043e\u043d\u0430\u0432\u0435\u0446\u044c 1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2017-05-17T16:15:57.656Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "\u041f\u0456\u0441\u0435\u043d\u044c\u043a\u0430 1 \u0412\u0438\u043a\u043e\u043d\u0430\u0432\u0435\u0446\u044c 1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2017-05-17T16:16:11.498Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "8",
+    "object_repr": "\u0412\u0438\u043a\u043e\u043d\u0430\u0432\u0435\u0446\u044c 7",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2017-05-17T16:16:11.509Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "\u0412\u0438\u043a\u043e\u043d\u0430\u0432\u0435\u0446\u044c 6",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2017-05-17T16:16:11.512Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "\u0412\u0438\u043a\u043e\u043d\u0430\u0432\u0435\u0446\u044c 5",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2017-05-17T16:16:11.515Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "\u0412\u0438\u043a\u043e\u043d\u0430\u0432\u0435\u0446\u044c 4",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2017-05-17T16:16:11.518Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "\u0412\u0438\u043a\u043e\u043d\u0430\u0432\u0435\u0446\u044c 3",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2017-05-17T16:16:11.520Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "\u0412\u0438\u043a\u043e\u043d\u0430\u0432\u0435\u0446\u044c 2",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2017-05-17T16:16:11.522Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "\u0412\u0438\u043a\u043e\u043d\u0430\u0432\u0435\u0446\u044c 1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2017-05-17T16:16:45.724Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "9",
+    "object_repr": "\u0412\u0438\u043a\u043e\u043d\u0430\u0432\u0435\u0446\u044c 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2017-05-17T16:17:23.693Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "10",
+    "object_repr": "\u0412\u0438\u043a\u043e\u043d\u0430\u0432\u0435\u0446\u044c 2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2017-05-17T16:19:52.353Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "\u0412\u0438\u043a\u043e\u043d\u0430\u0432\u0435\u0446\u044c 3",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2017-05-17T16:20:52.874Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "12",
+    "object_repr": "\u0412\u0438\u043a\u043e\u043d\u0430\u0432\u0435\u0446\u044c 4",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2017-05-17T16:21:23.662Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "13",
+    "object_repr": "\u0412\u0438\u043a\u043e\u043d\u0430\u0432\u0435\u0446\u044c 5",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2017-05-17T16:22:03.990Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "14",
+    "object_repr": "\u0412\u0438\u043a\u043e\u043d\u0430\u0432\u0435\u0446\u044c 6",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2017-05-17T16:23:21.167Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "15",
+    "object_repr": "\u0412\u0438\u043a\u043e\u043d\u0430\u0432\u0435\u0446\u044c 2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2017-05-17T16:23:29.079Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "15",
+    "object_repr": "\u0412\u0438\u043a\u043e\u043d\u0430\u0432\u0435\u0446\u044c 7",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"band_name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2017-05-17T16:25:51.190Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "false pretense \u0412\u0438\u043a\u043e\u043d\u0430\u0432\u0435\u0446\u044c 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2017-05-17T16:26:00.695Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "false pretense 1 \u0412\u0438\u043a\u043e\u043d\u0430\u0432\u0435\u0446\u044c 1",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"song_name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2017-05-17T16:26:16.315Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "5",
+    "object_repr": "False Pretense 2 \u0412\u0438\u043a\u043e\u043d\u0430\u0432\u0435\u0446\u044c 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2017-05-17T16:26:23.376Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "False Pretense 1 \u0412\u0438\u043a\u043e\u043d\u0430\u0432\u0435\u0446\u044c 1",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"song_name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2017-05-17T16:26:35.172Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "6",
+    "object_repr": "False Pretense 3 \u0412\u0438\u043a\u043e\u043d\u0430\u0432\u0435\u0446\u044c 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+}
+]
