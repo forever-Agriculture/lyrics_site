@@ -1,2 +1,4 @@
-lesscpy==0.11.1
-
+Django==1.11.1
+gunicorn==19.7.1
+psycopg2==2.7.1
+pytz==2017.2
