@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from __future__ import unicode_literals
-
+from djrichtextfield.models import RichTextField
 from django.db import models
 
 
@@ -19,7 +19,7 @@ class Band(models.Model):
 
     notes = models.TextField(
         blank=True,
-        verbose_name="Про виконавця")
+        verbose_name="Додаткові нотатки")
 
     song = models.ManyToManyField('Lyrics',
         blank=True,
@@ -40,8 +40,8 @@ class Lyrics(models.Model):
         blank=False,
         verbose_name="Назва пісні")
 
-    song_lyrics = models.TextField(
-        blank=True,
+    song_lyrics = RichTextField(
+        blank=False,
         verbose_name="Текст пісні")
 
     artist = models.ForeignKey('Band',

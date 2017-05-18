@@ -1,4 +1,9 @@
 Django==1.11.1
+django-paging==0.2.5
+django-richtextfield==1.1
+django-templatetag-sugar==1.0
 gunicorn==19.7.1
+olefile==0.44
+Pillow==4.1.1
 psycopg2==2.7.1
 pytz==2017.2

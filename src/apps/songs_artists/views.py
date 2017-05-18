@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
 
 # django imports
+from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 from django.contrib.postgres.search import SearchVector
 from django.views.generic import ListView
 from django.views.generic.detail import DetailView
+
 
 # app imports
 from .models import Band, Lyrics
@@ -15,7 +17,7 @@ class BandsListView(ListView):
     template_name = 'main_page.html'
     model = Band
     context_object_name = 'bands_list'
-    paginate_by = 7
+    paginate_by = 6
 
     def get_context_data(self, **kwargs):
         context = super(BandsListView, self).get_context_data(**kwargs)
@@ -23,25 +25,12 @@ class BandsListView(ListView):
         return context
 
 
-class BandsDetailView(ListView):
-    """..."""
-    template_name = 'band.html'
-    model = Lyrics
-    context_object_name = 'songs_list'
-
-
 # Songs
-class SongsListView(ListView):
+class SongslistView(ListView):
     """..."""
     template_name = 'band.html'
     model = Lyrics
     context_object_name = 'songs_list'
-
-    # def get_context_data(self, **kwargs):
-    #     context = super(SongsListView, self).get_context_data(**kwargs)
-    #     context['search'] = Lyrics.objects.annotate(search=SearchVector('song_name', 'artist'),
-    #                                                 ).filter(search=search_field)
-    #     return context
 
 
 class SongsDetailView(DetailView):
