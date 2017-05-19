@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
 from __future__ import unicode_literals
-from djrichtextfield.models import RichTextField
 from django.db import models
 
 
@@ -40,7 +39,7 @@ class Lyrics(models.Model):
         blank=False,
         verbose_name="Назва пісні")
 
-    song_lyrics = RichTextField(
+    song_lyrics = models.TextField(
         blank=False,
         verbose_name="Текст пісні")
 

@@ -4,11 +4,6 @@
 
 {% block meta_title %}Текст{% endblock meta_title %}
 
-{% block extrahead %}
-<script>window.CKEDITOR_BASEPATH = '/static/ckeditor/ckeditor/';</script>
-{{ block.super }}
-{% endblock %}
-
 {% block content %}
 
 <div class="container">
@@ -20,7 +15,7 @@
     <div class="row">
         <div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
             <ul class="list-group text-center">
-              <li class="list-group-item">{{ object.song_lyrics }}</li>
+              <li class="list-group-item">{{ object.song_lyrics|linebreaks }}</li>
             </ul>
         </div>
     </div>

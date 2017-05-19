@@ -1,11 +1,8 @@
 # -*- coding: utf-8 -*-
 
 # django imports
-from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
-from django.contrib.postgres.search import SearchVector
 from django.views.generic import ListView
 from django.views.generic.detail import DetailView
-
 
 # app imports
 from .models import Band, Lyrics
@@ -33,6 +30,7 @@ class SongslistView(ListView):
     context_object_name = 'songs_list'
 
 
+# Songs
 class SongsDetailView(DetailView):
     """..."""
     template_name = 'text.html'
