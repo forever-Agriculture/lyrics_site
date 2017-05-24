@@ -1,6 +1,5 @@
-# -*- coding: utf-8 -*-
-
 from __future__ import unicode_literals
+from django.utils.translation import ugettext_lazy as _
 from django.db import models
 
 
@@ -9,24 +8,24 @@ class Band(models.Model):
     band_name = models.CharField(
         max_length=256,
         blank=False,
-        verbose_name="Назва виконавця")
+        verbose_name=_("Artist"))
 
     photo = models.ImageField(
         blank=True,
-        verbose_name="Зображення",
+        verbose_name=_("Picture"),
         null=True)
 
     notes = models.TextField(
         blank=True,
-        verbose_name="Додаткові нотатки")
+        verbose_name=_("Extra notes"))
 
     song = models.ManyToManyField('Lyrics',
         blank=True,
-        verbose_name="Пісенька")
+        verbose_name=_("Song"))
 
     class Meta(object):
-        verbose_name = "Виконавець"
-        verbose_name_plural = "Виконавці"
+        verbose_name = _("Artist")
+        verbose_name_plural = _("Artists")
 
     def __str__(self):
         return self.band_name
@@ -37,21 +36,21 @@ class Lyrics(models.Model):
     song_name = models.CharField(
         max_length=256,
         blank=False,
-        verbose_name="Назва пісні")
+        verbose_name=_("Title"))
 
     song_lyrics = models.TextField(
         blank=False,
-        verbose_name="Текст пісні")
+        verbose_name=_("Lyrics"))
 
     artist = models.ForeignKey('Band',
-        verbose_name='Виконавець',
+        verbose_name=_("Artist"),
         blank=False,
         null=True,
         on_delete=models.PROTECT)
 
     class Meta(object):
-        verbose_name = "Пісенька"
-        verbose_name_plural = "Пісеньки"
+        verbose_name = _("Song")
+        verbose_name_plural = _("Songs")
 
     def __str__(self):
         if self.artist:

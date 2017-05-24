@@ -3,6 +3,7 @@
 *.swp
 *.core
 *.db
+*.mo
 
 *\.del*
 .idea/*
