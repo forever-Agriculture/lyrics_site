@@ -9,6 +9,11 @@
 
 <div class="container">
     <div class="row">
+        <div class="page-header text-center">
+          <h1><small>{% trans "Songs of the Artist:" %}</small></h1>
+        </div>
+    </div>
+    <div class="row">
       <div class="list-group col-sm-6 col-sm-offset-4  col-md-4 col-md-offset-4 text-center">
           {% for song in songs_list %}
           <a href="{% url "texts" song.id %}" class="list-group-item">{{ song.song_name }}</a>

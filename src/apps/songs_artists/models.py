@@ -36,7 +36,7 @@ class Lyrics(models.Model):
     song_name = models.CharField(
         max_length=256,
         blank=False,
-        verbose_name=_("Title"))
+        verbose_name=_("Song name"))
 
     song_lyrics = models.TextField(
         blank=False,

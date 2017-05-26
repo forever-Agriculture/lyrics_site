@@ -2,7 +2,6 @@
 from django.views.generic import ListView
 from django.views.generic.detail import DetailView
 
-
 # app imports
 from .models import Band, Lyrics
 
@@ -33,3 +32,11 @@ class SongsDetailView(DetailView):
     """..."""
     template_name = 'text.html'
     model = Lyrics
+
+
+# Search
+class SearchView(ListView):
+    """..."""
+    template_name = 'search.html'
+    model = Lyrics
+    context_object_name = 'songs_list'

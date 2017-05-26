@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-24 18:03+0000\n"
+"POT-Creation-Date: 2017-05-26 08:07+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,7 +42,7 @@ msgid "Artists"
 msgstr "Виконавці"
 
 #: apps/songs_artists/models.py:39
-msgid "Title"
+msgid "Song name"
 msgstr "Назва Пісеньки"
 
 #: apps/songs_artists/models.py:43 website/templates/text.html:6
@@ -60,6 +60,10 @@ msgstr "Українська"
 #: basic/settings.py:142
 msgid "English"
 msgstr "Англійська"
+
+#: website/templates/band.html:13
+msgid "Songs of the Artist:"
+msgstr "Пісні Виконавця:"
 
 #: website/templates/base.html:38
 msgid "About me"
@@ -93,6 +97,10 @@ msgstr "Пошукалка"
 msgid "Find"
 msgstr "Знайти"
 
+#: website/templates/base.html:56 website/templates/search.html:6
+msgid "All Songs"
+msgstr "Усі Пісеньки"
+
 #: website/templates/main_page.html:6
 msgid "Main page"
 msgstr "Головна"
@@ -100,3 +108,10 @@ msgstr "Головна"
 #: website/templates/main_page.html:23
 msgid "Open up"
 msgstr "Перейти"
+
+#: website/templates/search.html:13
+msgid "All Songs:"
+msgstr "Усі Пісеньки:"
+
+#~ msgid "Title"
+#~ msgstr "Назва Пісеньки"

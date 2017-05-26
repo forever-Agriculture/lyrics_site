@@ -17,7 +17,8 @@ from django.conf.urls import include, url
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
-from apps.songs_artists.views import BandsListView, SongslistView, SongsDetailView
+from apps.songs_artists.views import BandsListView, SongslistView, SongsDetailView, SearchView
+# from apps.songs_artists import views
 
 urlpatterns = [
 
@@ -30,6 +31,9 @@ urlpatterns = [
 
     # Admin
     url(r'^admin/', admin.site.urls),
+
+    # Search
+    url(r'^search/$', SearchView.as_view(), name='search'),
 
 ]   + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)+ static\
     (settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
