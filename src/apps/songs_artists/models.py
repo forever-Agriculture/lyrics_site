@@ -6,7 +6,7 @@ from django.db import models
 class Band(models.Model):
     """music band model"""
     band_name = models.CharField(
-        max_length=256,
+        max_length=30,
         blank=False,
         verbose_name=_("Artist"))
 
@@ -34,7 +34,7 @@ class Band(models.Model):
 class Lyrics(models.Model):
     """song model"""
     song_name = models.CharField(
-        max_length=256,
+        max_length=30,
         blank=False,
         verbose_name=_("Song name"))
 
@@ -44,8 +44,9 @@ class Lyrics(models.Model):
 
     artist = models.ForeignKey('Band',
         verbose_name=_("Artist"),
+        # related_name="songs",
         blank=False,
-        null=True,
+        # null=True,
         on_delete=models.PROTECT)
 
     class Meta(object):

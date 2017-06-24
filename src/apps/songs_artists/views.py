@@ -1,4 +1,5 @@
 # django imports
+from django.shortcuts import get_object_or_404
 from django.views.generic import ListView
 from django.views.generic.detail import DetailView
 
@@ -21,11 +22,21 @@ class BandsListView(ListView):
 
 
 # Songs
-class SongslistView(ListView):
-    """..."""
+class SongsListView(ListView):
+    """Dynamic filtering"""
     template_name = 'band.html'
-    model = Lyrics
-    context_object_name = 'songs_list'
+    context_object_name = 'song_list'
+
+    def get_queryset(self):
+        self.artist = get_object_or_404(Band, id=self.kwargs['pk'])
+        return Lyrics.objects.filter(artist=self.artist)
+
+    def get_context_data(self, **kwargs):
+        # Call the base implementation first to get a context
+        context = super(SongsListView, self).get_context_data(**kwargs)
+        # Add in the publisher
+        context['artist'] = self.artist
+        return context
 
 
 class SongsDetailView(DetailView):
@@ -34,7 +45,7 @@ class SongsDetailView(DetailView):
     model = Lyrics
 
 
-# Search
+# All songs
 class SearchView(ListView):
     """..."""
     template_name = 'search.html'
