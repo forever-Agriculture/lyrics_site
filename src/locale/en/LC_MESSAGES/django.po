@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-26 08:07+0000\n"
+"POT-Creation-Date: 2017-06-24 18:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,7 +30,7 @@ msgstr ""
 msgid "Extra notes"
 msgstr ""
 
-#: apps/songs_artists/models.py:24 apps/songs_artists/models.py:52
+#: apps/songs_artists/models.py:24 apps/songs_artists/models.py:53
 msgid "Song"
 msgstr ""
 
@@ -46,7 +46,7 @@ msgstr ""
 msgid "Lyrics"
 msgstr ""
 
-#: apps/songs_artists/models.py:53
+#: apps/songs_artists/models.py:54
 msgid "Songs"
 msgstr ""
 
@@ -56,10 +56,6 @@ msgstr ""
 
 #: basic/settings.py:142
 msgid "English"
-msgstr ""
-
-#: website/templates/band.html:13
-msgid "Songs of the Artist:"
 msgstr ""
 
 #: website/templates/base.html:38

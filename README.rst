@@ -1,11 +1,11 @@
 =======================
-Знаю Знаю Знаю!!!!
+Simple website that contains lyrics
 =======================
 
 
 *************
-Напишу пізніше
+Songs are sorted by music bands and singers
 *************
 
 
-
+that's just my 2nd django project

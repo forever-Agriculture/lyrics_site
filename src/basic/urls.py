@@ -18,7 +18,6 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
 from apps.songs_artists.views import BandsListView, SongsListView, SongsDetailView, SearchView
-# from apps.songs_artists import views
 
 urlpatterns = [
 
