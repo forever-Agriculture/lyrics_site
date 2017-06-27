@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-24 18:43+0000\n"
+"POT-Creation-Date: 2017-06-27 10:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,11 +50,11 @@ msgstr ""
 msgid "Songs"
 msgstr ""
 
-#: basic/settings.py:141
+#: basic/settings.py:127
 msgid "Ukrainian"
 msgstr ""
 
-#: basic/settings.py:142
+#: basic/settings.py:128
 msgid "English"
 msgstr ""
 
@@ -63,7 +63,7 @@ msgid "About me"
 msgstr ""
 
 #: website/templates/base.html:40
-msgid "My vk"
+msgid "My insta"
 msgstr ""
 
 #: website/templates/base.html:41
@@ -82,15 +82,7 @@ msgstr ""
 msgid "My sister"
 msgstr ""
 
-#: website/templates/base.html:52
-msgid "Search"
-msgstr ""
-
-#: website/templates/base.html:54
-msgid "Find"
-msgstr ""
-
-#: website/templates/base.html:56 website/templates/search.html:6
+#: website/templates/base.html:50 website/templates/search.html:6
 msgid "All Songs"
 msgstr ""
 

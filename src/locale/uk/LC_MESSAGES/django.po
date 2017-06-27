@@ -1,15 +1,15 @@
+# -*- coding: utf-8 -*-
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-# -*- coding: utf-8 -*-
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-24 18:43+0000\n"
+"POT-Creation-Date: 2017-06-27 10:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr ""
 #: apps/songs_artists/models.py:11 apps/songs_artists/models.py:27
 #: apps/songs_artists/models.py:46 website/templates/band.html:6
 msgid "Artist"
-msgstr "Назва Виконавця"
+msgstr "Виконавець"
 
 #: apps/songs_artists/models.py:15
 msgid "Picture"
@@ -43,35 +43,35 @@ msgstr "Виконавці"
 
 #: apps/songs_artists/models.py:39
 msgid "Song name"
-msgstr "Назва Пісеньки"
+msgstr "Назва пісеньки"
 
 #: apps/songs_artists/models.py:43 website/templates/text.html:6
 msgid "Lyrics"
-msgstr "Текст Пісеньки"
+msgstr "Текст пісеньки"
 
 #: apps/songs_artists/models.py:54
 msgid "Songs"
 msgstr "Пісеньки"
 
-#: basic/settings.py:141
+#: basic/settings.py:127
 msgid "Ukrainian"
-msgstr "Українська"
+msgstr "Рідна мова"
 
-#: basic/settings.py:142
+#: basic/settings.py:128
 msgid "English"
-msgstr "Англійська"
+msgstr "Англійська мова"
 
 #: website/templates/base.html:38
 msgid "About me"
 msgstr "Про автора"
 
 #: website/templates/base.html:40
-msgid "My vk"
-msgstr "Мій vk"
+msgid "My insta"
+msgstr "Мій інстаграм"
 
 #: website/templates/base.html:41
 msgid "My fb"
-msgstr "Мій fb"
+msgstr "Мій фейсбук"
 
 #: website/templates/base.html:42
 msgid "My university"
@@ -85,17 +85,9 @@ msgstr "Моя церква"
 msgid "My sister"
 msgstr "Моя сестра"
 
-#: website/templates/base.html:52
-msgid "Search"
-msgstr "Пошукалка"
-
-#: website/templates/base.html:54
-msgid "Find"
-msgstr "Знайти"
-
-#: website/templates/base.html:56 website/templates/search.html:6
+#: website/templates/base.html:50 website/templates/search.html:6
 msgid "All Songs"
-msgstr "Усі Пісеньки"
+msgstr "Усі пісні"
 
 #: website/templates/main_page.html:6
 msgid "Main page"
@@ -107,4 +99,4 @@ msgstr "Перейти"
 
 #: website/templates/search.html:13
 msgid "All Songs:"
-msgstr "Усі Пісеньки:"
+msgstr "Усі пісні:"

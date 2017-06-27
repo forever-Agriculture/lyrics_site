@@ -1,5 +1,5 @@
 =======================
-Simple website that contains lyrics
+Simple website that contains lyrics of songs
 =======================
 
 
