@@ -4,6 +4,7 @@
 *.core
 *.db
 *.mo
+*_initial.py
 
 *\.del*
 .idea/*

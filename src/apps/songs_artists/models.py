@@ -19,9 +19,9 @@ class Band(models.Model):
         blank=True,
         verbose_name=_("Extra notes"))
 
-    song = models.ManyToManyField('Lyrics',
-        blank=True,
-        verbose_name=_("Song"))
+    # song = models.ManyToManyField('Lyrics',
+    #     blank=True,
+    #     verbose_name=_("Song"))
 
     class Meta(object):
         verbose_name = _("Artist")
