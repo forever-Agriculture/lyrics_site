@@ -19,9 +19,9 @@ class Band(models.Model):
         blank=True,
         verbose_name=_("Extra notes"))
 
-    # song = models.ManyToManyField('Lyrics',
-    #     blank=True,
-    #     verbose_name=_("Song"))
+    #song = models.ManyToManyField('Lyrics',
+    #    blank=True,
+    #    verbose_name=_("Song")) 
 
     class Meta(object):
         verbose_name = _("Artist")
@@ -44,7 +44,7 @@ class Lyrics(models.Model):
 
     artist = models.ForeignKey('Band',
         verbose_name=_("Artist"),
-        # related_name="songs",
+        related_name="song",
         blank=False,
         # null=True,
         on_delete=models.PROTECT)

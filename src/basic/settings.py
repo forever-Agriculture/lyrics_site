@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # my apps
-    'apps.songs_artists',
+    'songs_artists',
 ]
 
 MIDDLEWARE = [

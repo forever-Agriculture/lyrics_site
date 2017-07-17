@@ -4,7 +4,7 @@ from django.views.generic import ListView
 from django.views.generic.detail import DetailView
 
 # app imports
-from .models import Band, Lyrics
+from songs_artists.models import Band, Lyrics
 
 
 # Artists and bands
