@@ -117,6 +117,11 @@ class SongsCreateView(CreateView):
         else:
             return super(SongsCreateView, self).post(request, *args, **kwargs)
 
+    def get_context_data(self, **kwargs):
+        context = super(SongsCreateView, self).get_context_data(**kwargs)
+        context['artists'] = Band.objects.all()
+        return context
+
 
 class SongsUpdateView(UpdateView):
     """Editing a song"""
