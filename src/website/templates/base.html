@@ -47,7 +47,9 @@
                   </ul>
                 </li>
               </ul>
-                <a class="navbar-brand navbar-right" href="{% url "search" %}">{% trans "All Songs" %}</a>
+                <a href="{% url "search" %}" class="navbar-brand navbar-right">{% trans "All Songs" %}</a>
+                <a href="{% url "song_add"%}" class="navbar-brand navbar-right">{% trans "Add Song" %}</a>
+                <a href="{% url "artist_add"%}" class="navbar-brand navbar-right">{% trans "Add Artist" %}</a>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
         </nav>

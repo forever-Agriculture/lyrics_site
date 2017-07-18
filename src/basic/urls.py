@@ -17,22 +17,27 @@ from django.conf.urls import include, url
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
-from apps.songs_artists.views import BandsListView, SongsListView, SongsDetailView, SearchView
-
+from apps.songs_artists.views import BandsListView, SongsListView, SongsDetailView, SearchView, \
+                                    SongsCreateView, ArtistsCreateView, SongsUpdateView, ArtistsUpdateView, \
+                                    SongsDeleteView, ArtistsDeleteView
 urlpatterns = [
 
     # Bands
     url(r'^$', BandsListView.as_view(), name='home'),
     url(r'^bands/(?P<pk>\d+)/$', SongsListView.as_view(), name='bands'),
+    url(r'^artist/add/$', ArtistsCreateView.as_view(), name='artist_add'),
+    url(r'^artist/(?P<pk>\d+)/edit/$', ArtistsUpdateView.as_view(), name='artist_edit'),
+    url(r'^artist/(?P<pk>\d+)/delete/$', ArtistsDeleteView.as_view(), name='artist_delete'),
 
     # Songs
     url(r'^texts/(?P<pk>\d+)/$', SongsDetailView.as_view(), name='texts'),
+    url(r'^search/$', SearchView.as_view(), name='search'),
+    url(r'^song/add/$', SongsCreateView.as_view(), name='song_add'),
+    url(r'^song/(?P<pk>\d+)/edit/$', SongsUpdateView.as_view(), name='song_edit'),
+    url(r'^song/(?P<pk>\d+)/delete/$', SongsDeleteView.as_view(), name='song_delete'),
 
     # Admin
     url(r'^admin/', admin.site.urls),
-
-    # Search
-    url(r'^search/$', SearchView.as_view(), name='search'),
 
 ]   + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)+ static\
     (settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

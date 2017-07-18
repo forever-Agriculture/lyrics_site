@@ -11,6 +11,10 @@
     <div class="row">
         <div class="page-header text-center">
           <h1><small>{{ artist }}:</small></h1>
+            <a href="{% url "artist_edit" artist.id %}" class="btn btn-default"
+                  role="button">{% trans "Edit" %}</a>
+            <a href="{% url "artist_delete" artist.id %}" class="btn btn-danger"
+                  role="button">{% trans "Delete" %}</a>
         </div>
     </div>
     <div class="row">
