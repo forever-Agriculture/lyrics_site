@@ -21,8 +21,7 @@
         <div class="form-group">
             <label for="photo" class="col-sm-2 control-label">{% trans "Image" %}</label>
             <div class=”col-sm-10”>
-                <input type="file" value="{{ form.photo }}"
-                    name="photo" id="photo" class="form-control" />
+                {{ form.photo }}
                 <span class=”help-block”>{{ form.errors.photo }}</span>
             </div>
         </div>

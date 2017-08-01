@@ -22,10 +22,7 @@
             <label for="artist" class="col-sm-2 control-label">{% trans "Artist" %}</label>
             <div class=”col-sm-10”>
                 <select name="artist" id="artist" class="form-control">
-                    <option value="{{ form.artist.value }}">{% trans "Pick an artist:" %}</option>
-                    {% for artist in artists %}
-                        <option value="{{ form.artist }}">{{ artist }}</option>
-                    {% endfor %}
+                    <option value="{{ form.artist }}"></option>
                 </select>
                 <span class=”help-block”>{{ form.errors.artist }}</span>
             </div>
