@@ -13,13 +13,12 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
-from django.conf.urls import include, url
-from django.conf import settings
-from django.conf.urls.static import static
+from django.conf.urls import url
 from django.contrib import admin
-from apps.songs_artists.views import BandsListView, SongsListView, SongsDetailView, SearchView, \
-                                    SongsCreateView, ArtistsCreateView, SongsUpdateView, ArtistsUpdateView, \
-                                    SongsDeleteView, ArtistsDeleteView
+from songs_artists.views import BandsListView, SongsListView, SongsDetailView, \
+    SearchView, SongsCreateView, ArtistsCreateView, SongsUpdateView, \
+    ArtistsUpdateView, SongsDeleteView, ArtistsDeleteView
+
 urlpatterns = [
 
     # Bands
@@ -39,5 +38,4 @@ urlpatterns = [
     # Admin
     url(r'^admin/', admin.site.urls),
 
-]   + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)+ static\
-    (settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]

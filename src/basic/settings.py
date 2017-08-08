@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 
 import os
 import sys
-from django.utils.translation import ugettext_lazy as _
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 # The root directory of the Django project.
@@ -123,9 +122,11 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
 
+gettext = lambda s: s
+
 LANGUAGES = [
-    ('uk', _('Ukrainian')),
-    ('en', _('English')),
+    ('uk', gettext('Ukrainian')),
+    ('en', gettext('English')),
 ]
 
 LANGUAGE_CODE = 'uk'

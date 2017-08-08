@@ -18,7 +18,8 @@ class BandsListView(ListView):
     paginate_by = 6
 
     def get_context_data(self, **kwargs):
-        context = super(BandsListView, self).get_context_data(**kwargs)
+        context = super(BandsListView, self).get_context_data\
+                                            (**kwargs)
         context['bands_range'] = range(context["paginator"].num_pages)
         return context
 
@@ -34,7 +35,8 @@ class SongsListView(ListView):
 
     def get_context_data(self, **kwargs):
         # Call the base implementation first to get a context
-        context = super(SongsListView, self).get_context_data(**kwargs)
+        context = super(SongsListView, self).get_context_data\
+                                                (**kwargs)
         # Add in the publisher
         context['artist'] = self.artist
         return context
@@ -55,7 +57,8 @@ class ArtistsCreateView(CreateView):
                 reverse('home')
             )
         else:
-            return super(ArtistsCreateView, self).post(request, *args, **kwargs)
+            return super(ArtistsCreateView, self).post\
+                        (request, *args, **kwargs)
 
 
 class ArtistsUpdateView(UpdateView):
@@ -73,7 +76,8 @@ class ArtistsUpdateView(UpdateView):
                 reverse('home')
             )
         else:
-            return super(ArtistsUpdateView, self).post(request, *args, **kwargs)
+            return super(ArtistsUpdateView, self).post\
+                        (request, *args, **kwargs)
 
 
 class ArtistsDeleteView(DeleteView):
@@ -90,7 +94,8 @@ class ArtistsDeleteView(DeleteView):
                 reverse('home')
             )
         else:
-            return super(ArtistsDeleteView, self).post(request, *args, **kwargs)
+            return super(ArtistsDeleteView, self).post\
+                        (request, *args, **kwargs)
 
 
 # Songs
@@ -115,10 +120,12 @@ class SongsCreateView(CreateView):
                 reverse('search')
             )
         else:
-            return super(SongsCreateView, self).post(request, *args, **kwargs)
+            return super(SongsCreateView, self).\
+                        post(request, *args, **kwargs)
 
     def get_context_data(self, **kwargs):
-        context = super(SongsCreateView, self).get_context_data(**kwargs)
+        context = super(SongsCreateView, self).get_context_data\
+                                                    (**kwargs)
         context['artists'] = Band.objects.all()
         return context
 
@@ -138,10 +145,12 @@ class SongsUpdateView(UpdateView):
                 reverse('search')
             )
         else:
-            return super(SongsUpdateView, self).post(request, *args, **kwargs)
+            return super(SongsUpdateView, self).post\
+                        (request, *args, **kwargs)
 
     def get_context_data(self, **kwargs):
-        context = super(SongsUpdateView, self).get_context_data(**kwargs)
+        context = super(SongsUpdateView, self).get_context_data\
+                                                (**kwargs)
         context['artists'] = Band.objects.all()
         return context
 
@@ -160,7 +169,8 @@ class SongsDeleteView(DeleteView):
                 reverse('search')
             )
         else:
-            return super(SongsDeleteView, self).post(request, *args, **kwargs)
+            return super(SongsDeleteView, self).post\
+                        (request, *args, **kwargs)
 
 
 # Search
