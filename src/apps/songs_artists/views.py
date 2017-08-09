@@ -43,7 +43,7 @@ class SongsListView(ListView):
         return context
 
 
-class ArtistsCreateView(CreateView, CancelButtonMixin):
+class ArtistsCreateView(CancelButtonMixin, CreateView):
     """Creating an artist"""
     template_name = 'add_artist.html'
     model = Band
@@ -53,7 +53,7 @@ class ArtistsCreateView(CreateView, CancelButtonMixin):
         return reverse('home')
 
 
-class ArtistsUpdateView(UpdateView, CancelButtonMixin):
+class ArtistsUpdateView(CancelButtonMixin, UpdateView):
     """Editing an artist"""
     template_name = 'edit_artist.html'
     model = Band
@@ -63,7 +63,7 @@ class ArtistsUpdateView(UpdateView, CancelButtonMixin):
         return reverse('home')
 
 
-class ArtistsDeleteView(DeleteView, CancelButtonMixin):
+class ArtistsDeleteView(CancelButtonMixin, DeleteView):
     template_name = 'delete_artist.html'
     model = Band
     fields = '__all__'
@@ -79,7 +79,7 @@ class SongsDetailView(DetailView):
     model = Lyrics
 
 
-class SongsCreateView(CreateView, CancelButtonMixin):
+class SongsCreateView(CancelButtonMixin, CreateView):
     """Creating a song"""
     template_name = 'add_song.html'
     model = Lyrics
@@ -95,7 +95,7 @@ class SongsCreateView(CreateView, CancelButtonMixin):
         return context
 
 
-class SongsUpdateView(UpdateView, CancelButtonMixin):
+class SongsUpdateView(CancelButtonMixin, UpdateView):
     """Editing a song"""
     template_name = 'edit_song.html'
     model = Lyrics
@@ -111,7 +111,7 @@ class SongsUpdateView(UpdateView, CancelButtonMixin):
         return context
 
 
-class SongsDeleteView(DeleteView, CancelButtonMixin):
+class SongsDeleteView(CancelButtonMixin, DeleteView):
     template_name = 'delete_song.html'
     model = Lyrics
     fields = '__all__'
