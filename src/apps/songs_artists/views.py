@@ -1,12 +1,12 @@
 # django imports
 from django.core.urlresolvers import reverse
 from django.shortcuts import get_object_or_404
-from django.http import HttpResponseRedirect
 from django.views.generic import ListView, CreateView, UpdateView, \
                                                         DeleteView
 from django.views.generic.detail import DetailView
 
 # app imports
+from songs_artists.tools import CancelButtonMixin
 from songs_artists.models import Band, Lyrics
 
 
@@ -43,7 +43,7 @@ class SongsListView(ListView):
         return context
 
 
-class ArtistsCreateView(CreateView):
+class ArtistsCreateView(CancelButtonMixin, CreateView):
     """Creating an artist"""
     template_name = 'add_artist.html'
     model = Band
@@ -52,16 +52,8 @@ class ArtistsCreateView(CreateView):
     def get_success_url(self):
         return reverse('home')
 
-    def post(self, request, *args, **kwargs):
-        if request.POST.get('cancel_button') is not None:
-            return HttpResponseRedirect(
-                reverse('home')
-            )
-        return super(self.__class__, self).post\
-                    (request, *args, **kwargs)
 
-
-class ArtistsUpdateView(UpdateView):
+class ArtistsUpdateView(CancelButtonMixin, UpdateView):
     """Editing an artist"""
     template_name = 'edit_artist.html'
     model = Band
@@ -70,16 +62,8 @@ class ArtistsUpdateView(UpdateView):
     def get_success_url(self):
         return reverse('home')
 
-    def post(self, request, *args, **kwargs):
-        if request.POST.get('cancel_button') is not None:
-            return HttpResponseRedirect(
-                reverse('home')
-            )
-        return super(self.__class__, self).post\
-                    (request, *args, **kwargs)
 
-
-class ArtistsDeleteView(DeleteView):
+class ArtistsDeleteView(CancelButtonMixin, DeleteView):
     """Deleting an artist"""
     template_name = 'delete_artist.html'
     model = Band
@@ -87,14 +71,6 @@ class ArtistsDeleteView(DeleteView):
 
     def get_success_url(self):
         return reverse('home')
-
-    def post(self, request, *args, **kwargs):
-        if request.POST.get('cancel_button') is not None:
-            return HttpResponseRedirect(
-                reverse('home')
-            )
-        return super(self.__class__, self).post\
-                    (request, *args, **kwargs)
 
 
 # Songs
@@ -104,7 +80,7 @@ class SongsDetailView(DetailView):
     model = Lyrics
 
 
-class SongsCreateView(CreateView):
+class SongsCreateView(CancelButtonMixin, CreateView):
     """Creating a song"""
     template_name = 'add_song.html'
     model = Lyrics
@@ -113,14 +89,6 @@ class SongsCreateView(CreateView):
     def get_success_url(self):
         return reverse('search')
 
-    def post(self, request, *args, **kwargs):
-        if request.POST.get('cancel_button') is not None:
-            return HttpResponseRedirect(
-                reverse('home')
-            )
-        return super(self.__class__, self).post\
-                    (request, *args, **kwargs)
-
     def get_context_data(self, **kwargs):
         context = super(SongsCreateView, self).get_context_data\
                                                     (**kwargs)
@@ -128,7 +96,7 @@ class SongsCreateView(CreateView):
         return context
 
 
-class SongsUpdateView(UpdateView):
+class SongsUpdateView(CancelButtonMixin, UpdateView):
     """Editing a song"""
     template_name = 'edit_song.html'
     model = Lyrics
@@ -137,14 +105,6 @@ class SongsUpdateView(UpdateView):
     def get_success_url(self):
         return reverse('search')
 
-    def post(self, request, *args, **kwargs):
-        if request.POST.get('cancel_button') is not None:
-            return HttpResponseRedirect(
-                reverse('home')
-            )
-        return super(self.__class__, self).post\
-                    (request, *args, **kwargs)
-
     def get_context_data(self, **kwargs):
         context = super(SongsUpdateView, self).get_context_data\
                                                 (**kwargs)
@@ -152,7 +112,7 @@ class SongsUpdateView(UpdateView):
         return context
 
 
-class SongsDeleteView(DeleteView):
+class SongsDeleteView(CancelButtonMixin, DeleteView):
     """Deleting a song"""
     template_name = 'delete_song.html'
     model = Lyrics
@@ -160,14 +120,6 @@ class SongsDeleteView(DeleteView):
 
     def get_success_url(self):
         return reverse('search')
-
-    def post(self, request, *args, **kwargs):
-        if request.POST.get('cancel_button') is not None:
-            return HttpResponseRedirect(
-                reverse('home')
-            )
-        return super(self.__class__, self).post\
-                    (request, *args, **kwargs)
 
 
 # Search
