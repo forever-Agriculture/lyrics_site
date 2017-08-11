@@ -9,5 +9,4 @@ class CancelButtonMixin(object):
             return HttpResponseRedirect(
              reverse('home')
             )
-        return super(self.__class__, self).post\
-                    (request, *args, **kwargs)
+        return super().post(request, *args, **kwargs)
