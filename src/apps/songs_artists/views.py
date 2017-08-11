@@ -19,8 +19,7 @@ class BandsListView(ListView):
     paginate_by = 6
 
     def get_context_data(self, **kwargs):
-        context = super(BandsListView, self).get_context_data\
-                                            (**kwargs)
+        context = super().get_context_data(**kwargs)
         context['bands_range'] = range(context["paginator"].num_pages)
         return context
 
@@ -36,8 +35,7 @@ class SongsListView(ListView):
 
     def get_context_data(self, **kwargs):
         # Call the base implementation first to get a context
-        context = super(SongsListView, self).get_context_data\
-                                                (**kwargs)
+        context = super().get_context_data(**kwargs)
         # Add in the publisher
         context['artist'] = self.artist
         return context
@@ -90,8 +88,7 @@ class SongsCreateView(CancelButtonMixin, CreateView):
         return reverse('search')
 
     def get_context_data(self, **kwargs):
-        context = super(SongsCreateView, self).get_context_data\
-                                                    (**kwargs)
+        context = super().get_context_data(**kwargs)
         context['artists'] = Band.objects.all()
         return context
 
@@ -106,8 +103,7 @@ class SongsUpdateView(CancelButtonMixin, UpdateView):
         return reverse('search')
 
     def get_context_data(self, **kwargs):
-        context = super(SongsUpdateView, self).get_context_data\
-                                                (**kwargs)
+        context = super().get_context_data(**kwargs)
         context['artists'] = Band.objects.all()
         return context
 
