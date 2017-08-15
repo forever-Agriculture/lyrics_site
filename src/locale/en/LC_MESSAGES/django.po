@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-18 13:29+0300\n"
+"POT-Creation-Date: 2017-08-15 08:07+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,48 +17,48 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: apps/songs_artists/models.py:11 apps/songs_artists/models.py:27
-#: apps/songs_artists/models.py:46 website/templates/add_artist.html:14
-#: website/templates/add_song.html:22 website/templates/band.html:6
-#: website/templates/edit_artist.html:14 website/templates/edit_song.html:22
+#: apps/songs_artists/models.py:10 apps/songs_artists/models.py:26
+#: apps/songs_artists/models.py:45 website/templates/add_artist.html:15
+#: website/templates/add_song.html:21 website/templates/band.html:6
+#: website/templates/edit_artist.html:15 website/templates/edit_song.html:22
 msgid "Artist"
 msgstr ""
 
-#: apps/songs_artists/models.py:15
+#: apps/songs_artists/models.py:14
 msgid "Picture"
 msgstr ""
 
-#: apps/songs_artists/models.py:20 website/templates/add_artist.html:30
-#: website/templates/edit_artist.html:30
+#: apps/songs_artists/models.py:19 website/templates/add_artist.html:29
+#: website/templates/edit_artist.html:36
 msgid "Extra notes"
 msgstr ""
 
-#: apps/songs_artists/models.py:28
+#: apps/songs_artists/models.py:27
 msgid "Artists"
 msgstr ""
 
-#: apps/songs_artists/models.py:39 website/templates/add_song.html:14
-#: website/templates/edit_song.html:14
+#: apps/songs_artists/models.py:38 website/templates/add_song.html:14
+#: website/templates/edit_song.html:15
 msgid "Song name"
 msgstr ""
 
-#: apps/songs_artists/models.py:43 website/templates/text.html:6
+#: apps/songs_artists/models.py:42 website/templates/text.html:6
 msgid "Lyrics"
 msgstr ""
 
-#: apps/songs_artists/models.py:53
+#: apps/songs_artists/models.py:52
 msgid "Song"
 msgstr ""
 
-#: apps/songs_artists/models.py:54
+#: apps/songs_artists/models.py:53
 msgid "Songs"
 msgstr ""
 
-#: basic/settings.py:127
+#: basic/settings.py:128
 msgid "Ukrainian"
 msgstr ""
 
-#: basic/settings.py:128
+#: basic/settings.py:129
 msgid "English"
 msgstr ""
 
@@ -66,18 +66,18 @@ msgstr ""
 msgid "Add an Artist"
 msgstr ""
 
-#: website/templates/add_artist.html:22 website/templates/edit_artist.html:22
+#: website/templates/add_artist.html:22 website/templates/edit_artist.html:24
 msgid "Image"
 msgstr ""
 
-#: website/templates/add_artist.html:38 website/templates/add_song.html:42
+#: website/templates/add_artist.html:37 website/templates/add_song.html:40
 msgid "Add"
 msgstr ""
 
-#: website/templates/add_artist.html:39 website/templates/add_song.html:43
+#: website/templates/add_artist.html:38 website/templates/add_song.html:41
 #: website/templates/delete_artist.html:14
-#: website/templates/delete_song.html:14 website/templates/edit_artist.html:39
-#: website/templates/edit_song.html:43
+#: website/templates/delete_song.html:14 website/templates/edit_artist.html:45
+#: website/templates/edit_song.html:41
 msgid "Cancel"
 msgstr ""
 
@@ -85,11 +85,11 @@ msgstr ""
 msgid "Add a Song"
 msgstr ""
 
-#: website/templates/add_song.html:25 website/templates/edit_song.html:25
+#: website/templates/add_song.html:24
 msgid "Pick an artist:"
 msgstr ""
 
-#: website/templates/add_song.html:34 website/templates/edit_song.html:34
+#: website/templates/add_song.html:32 website/templates/edit_song.html:32
 msgid "Song lyrics"
 msgstr ""
 
@@ -98,7 +98,8 @@ msgid "Edit"
 msgstr ""
 
 #: website/templates/band.html:17 website/templates/delete_artist.html:13
-#: website/templates/delete_song.html:13 website/templates/text.html:17
+#: website/templates/delete_song.html:13 website/templates/edit_artist.html:27
+#: website/templates/text.html:17
 msgid "Delete"
 msgstr ""
 
@@ -147,15 +148,19 @@ msgstr ""
 msgid "Do you really want to delete"
 msgstr ""
 
-#: website/templates/edit_artist.html:6
+#: website/templates/edit_artist.html:7
 msgid "Edit the Artist"
 msgstr ""
 
-#: website/templates/edit_artist.html:38 website/templates/edit_song.html:42
+#: website/templates/edit_artist.html:30
+msgid "Replace"
+msgstr ""
+
+#: website/templates/edit_artist.html:44 website/templates/edit_song.html:40
 msgid "Update"
 msgstr ""
 
-#: website/templates/edit_song.html:6
+#: website/templates/edit_song.html:7
 msgid "Update the Song"
 msgstr ""
 

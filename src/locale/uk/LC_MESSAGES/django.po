@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-18 13:29+0300\n"
+"POT-Creation-Date: 2017-08-15 08:07+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,48 +20,48 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#: apps/songs_artists/models.py:11 apps/songs_artists/models.py:27
-#: apps/songs_artists/models.py:46 website/templates/add_artist.html:14
-#: website/templates/add_song.html:22 website/templates/band.html:6
-#: website/templates/edit_artist.html:14 website/templates/edit_song.html:22
+#: apps/songs_artists/models.py:10 apps/songs_artists/models.py:26
+#: apps/songs_artists/models.py:45 website/templates/add_artist.html:15
+#: website/templates/add_song.html:21 website/templates/band.html:6
+#: website/templates/edit_artist.html:15 website/templates/edit_song.html:22
 msgid "Artist"
 msgstr "Виконавець"
 
-#: apps/songs_artists/models.py:15
+#: apps/songs_artists/models.py:14
 msgid "Picture"
 msgstr "Зображення"
 
-#: apps/songs_artists/models.py:20 website/templates/add_artist.html:30
-#: website/templates/edit_artist.html:30
+#: apps/songs_artists/models.py:19 website/templates/add_artist.html:29
+#: website/templates/edit_artist.html:36
 msgid "Extra notes"
 msgstr "Додаткові нотатки"
 
-#: apps/songs_artists/models.py:28
+#: apps/songs_artists/models.py:27
 msgid "Artists"
 msgstr "Виконавці"
 
-#: apps/songs_artists/models.py:39 website/templates/add_song.html:14
-#: website/templates/edit_song.html:14
+#: apps/songs_artists/models.py:38 website/templates/add_song.html:14
+#: website/templates/edit_song.html:15
 msgid "Song name"
 msgstr "Назва пісеньки"
 
-#: apps/songs_artists/models.py:43 website/templates/text.html:6
+#: apps/songs_artists/models.py:42 website/templates/text.html:6
 msgid "Lyrics"
 msgstr "Текст пісеньки"
 
-#: apps/songs_artists/models.py:53
+#: apps/songs_artists/models.py:52
 msgid "Song"
 msgstr "Пісенька"
 
-#: apps/songs_artists/models.py:54
+#: apps/songs_artists/models.py:53
 msgid "Songs"
 msgstr "Пісеньки"
 
-#: basic/settings.py:127
+#: basic/settings.py:128
 msgid "Ukrainian"
 msgstr "Рідна мова"
 
-#: basic/settings.py:128
+#: basic/settings.py:129
 msgid "English"
 msgstr "Англійська мова"
 
@@ -69,18 +69,18 @@ msgstr "Англійська мова"
 msgid "Add an Artist"
 msgstr "Додати виконавця"
 
-#: website/templates/add_artist.html:22 website/templates/edit_artist.html:22
+#: website/templates/add_artist.html:22 website/templates/edit_artist.html:24
 msgid "Image"
-msgstr "Зображення"
+msgstr "Фото"
 
-#: website/templates/add_artist.html:38 website/templates/add_song.html:42
+#: website/templates/add_artist.html:37 website/templates/add_song.html:40
 msgid "Add"
 msgstr "Додати"
 
-#: website/templates/add_artist.html:39 website/templates/add_song.html:43
+#: website/templates/add_artist.html:38 website/templates/add_song.html:41
 #: website/templates/delete_artist.html:14
-#: website/templates/delete_song.html:14 website/templates/edit_artist.html:39
-#: website/templates/edit_song.html:43
+#: website/templates/delete_song.html:14 website/templates/edit_artist.html:45
+#: website/templates/edit_song.html:41
 msgid "Cancel"
 msgstr "Скасувати"
 
@@ -88,11 +88,11 @@ msgstr "Скасувати"
 msgid "Add a Song"
 msgstr "Додати пісню"
 
-#: website/templates/add_song.html:25 website/templates/edit_song.html:25
+#: website/templates/add_song.html:24
 msgid "Pick an artist:"
 msgstr "Виберість виконавця"
 
-#: website/templates/add_song.html:34 website/templates/edit_song.html:34
+#: website/templates/add_song.html:32 website/templates/edit_song.html:32
 msgid "Song lyrics"
 msgstr "Текст пісеньки"
 
@@ -101,7 +101,8 @@ msgid "Edit"
 msgstr "Редагувати"
 
 #: website/templates/band.html:17 website/templates/delete_artist.html:13
-#: website/templates/delete_song.html:13 website/templates/text.html:17
+#: website/templates/delete_song.html:13 website/templates/edit_artist.html:27
+#: website/templates/text.html:17
 msgid "Delete"
 msgstr "Позбутися"
 
@@ -150,15 +151,19 @@ msgstr "Позбутися пісні"
 msgid "Do you really want to delete"
 msgstr "Ви справді бажаєте позбутися"
 
-#: website/templates/edit_artist.html:6
+#: website/templates/edit_artist.html:7
 msgid "Edit the Artist"
 msgstr "Редагувати виконавця"
 
-#: website/templates/edit_artist.html:38 website/templates/edit_song.html:42
+#: website/templates/edit_artist.html:30
+msgid "Replace"
+msgstr "Змінити"
+
+#: website/templates/edit_artist.html:44 website/templates/edit_song.html:40
 msgid "Update"
 msgstr "Редагувати"
 
-#: website/templates/edit_song.html:6
+#: website/templates/edit_song.html:7
 msgid "Update the Song"
 msgstr "Редагувати пісню"
 
