@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-08-15 08:07+0000\n"
+"POT-Creation-Date: 2017-08-15 08:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,7 +32,7 @@ msgid "Picture"
 msgstr "Зображення"
 
 #: apps/songs_artists/models.py:19 website/templates/add_artist.html:29
-#: website/templates/edit_artist.html:36
+#: website/templates/edit_artist.html:35
 msgid "Extra notes"
 msgstr "Додаткові нотатки"
 
@@ -79,7 +79,7 @@ msgstr "Додати"
 
 #: website/templates/add_artist.html:38 website/templates/add_song.html:41
 #: website/templates/delete_artist.html:14
-#: website/templates/delete_song.html:14 website/templates/edit_artist.html:45
+#: website/templates/delete_song.html:14 website/templates/edit_artist.html:44
 #: website/templates/edit_song.html:41
 msgid "Cancel"
 msgstr "Скасувати"
@@ -159,7 +159,7 @@ msgstr "Редагувати виконавця"
 msgid "Replace"
 msgstr "Змінити"
 
-#: website/templates/edit_artist.html:44 website/templates/edit_song.html:40
+#: website/templates/edit_artist.html:43 website/templates/edit_song.html:40
 msgid "Update"
 msgstr "Редагувати"
 
