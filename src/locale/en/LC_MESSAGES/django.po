@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-08-15 08:26+0000\n"
+"POT-Creation-Date: 2017-08-26 16:48+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,11 +54,11 @@ msgstr ""
 msgid "Songs"
 msgstr ""
 
-#: basic/settings.py:128
+#: basic/settings.py:130
 msgid "Ukrainian"
 msgstr ""
 
-#: basic/settings.py:129
+#: basic/settings.py:131
 msgid "English"
 msgstr ""
 
@@ -93,50 +93,42 @@ msgstr ""
 msgid "Song lyrics"
 msgstr ""
 
-#: website/templates/band.html:15 website/templates/text.html:15
+#: website/templates/band.html:16 website/templates/text.html:16
 msgid "Edit"
 msgstr ""
 
-#: website/templates/band.html:17 website/templates/delete_artist.html:13
+#: website/templates/band.html:18 website/templates/delete_artist.html:13
 #: website/templates/delete_song.html:13 website/templates/edit_artist.html:27
-#: website/templates/text.html:17
+#: website/templates/text.html:18
 msgid "Delete"
 msgstr ""
 
+#: website/templates/base.html:37
+msgid "Log out"
+msgstr ""
+
 #: website/templates/base.html:38
-msgid "About me"
-msgstr ""
-
-#: website/templates/base.html:40
-msgid "My insta"
-msgstr ""
-
-#: website/templates/base.html:41
-msgid "My fb"
-msgstr ""
-
-#: website/templates/base.html:42
-msgid "My university"
-msgstr ""
-
-#: website/templates/base.html:44
-msgid "My church"
-msgstr ""
-
-#: website/templates/base.html:46
-msgid "My sister"
-msgstr ""
-
-#: website/templates/base.html:50 website/templates/search.html:6
-msgid "All Songs"
-msgstr ""
-
-#: website/templates/base.html:51
 msgid "Add Song"
 msgstr ""
 
-#: website/templates/base.html:52
+#: website/templates/base.html:39
 msgid "Add Artist"
+msgstr ""
+
+#: website/templates/base.html:41 website/templates/registration/login.html:4
+#: website/templates/registration/login.html:10
+#: website/templates/registration/login.html:31
+#: website/templates/registration/login.html:35
+#: website/templates/registration/login.html:36
+msgid "Log in"
+msgstr ""
+
+#: website/templates/base.html:42
+msgid "Sign in"
+msgstr ""
+
+#: website/templates/base.html:44 website/templates/search.html:6
+msgid "All Songs"
 msgstr ""
 
 #: website/templates/delete_artist.html:6 website/templates/delete_song.html:6
@@ -170,6 +162,14 @@ msgstr ""
 
 #: website/templates/main_page.html:23
 msgid "Open up"
+msgstr ""
+
+#: website/templates/registration/login.html:18
+msgid "Username"
+msgstr ""
+
+#: website/templates/registration/login.html:25
+msgid "Password"
 msgstr ""
 
 #: website/templates/search.html:13

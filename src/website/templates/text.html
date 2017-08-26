@@ -11,10 +11,13 @@
     <div class="row">
         <div class="page-header text-center">
           <h1>{{ object.song_name }}<small> {{ object.artist }}</small></h1>
+            {% if user.is_authenticated %}
             <a href="{% url "song_edit" object.id %}" class="btn btn-default"
                   role="button">{% trans "Edit" %}</a>
             <a href="{% url "song_delete" object.id %}" class="btn btn-danger"
                   role="button">{% trans "Delete" %}</a>
+            {% else %}
+            {% endif %}
         </div>
     </div>
     <div class="row">

@@ -45,6 +45,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # registration
+    'registration',
     # my apps
     'songs_artists',
 ]
@@ -160,6 +162,11 @@ STATICFILES_DIRS = _static_dirs
 # Media
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR_UP, 'world/var/www/media')
+
+
+# Registration
+REGISTRATION_OPEN = True
+LOGIN_REDIRECT_URL = 'home'
 
 
 # Expand the default settings.

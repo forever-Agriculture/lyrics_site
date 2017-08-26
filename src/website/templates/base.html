@@ -33,23 +33,15 @@
               <a class="navbar-brand" href="{% url "home" %}">ILONA LYRICS</a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav">
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{% trans "About me" %}<span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">{% trans "My insta" %}</a></li>
-                    <li><a href="#">{% trans "My fb" %}</a></li>
-                    <li><a href="#">{% trans "My university" %}</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">{% trans "My church" %}</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">{% trans "My sister" %}</a></li>
-                  </ul>
-                </li>
-              </ul>
-                <a href="{% url "search" %}" class="navbar-brand navbar-right">{% trans "All Songs" %}</a>
+                {% if user.is_authenticated %}
+                <a href="{% url "users:auth_logout" %}" class="navbar-text navbar-left">{% trans "Log out" %}</a>
                 <a href="{% url "song_add"%}" class="navbar-brand navbar-right">{% trans "Add Song" %}</a>
                 <a href="{% url "artist_add"%}" class="navbar-brand navbar-right">{% trans "Add Artist" %}</a>
+                {% else %}
+                <a href="{% url "users:auth_login" %}" class="navbar-text navbar-left">{% trans "Log in" %}</a>
+                <a href="{% url "users:registration_register" %}" class="navbar-text navbar-left">{% trans "Sign in" %}</a>
+                {% endif %}
+                <a href="{% url "search" %}" class="navbar-brand navbar-right">{% trans "All Songs" %}</a>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
         </nav>
