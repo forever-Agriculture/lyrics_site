@@ -165,7 +165,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR_UP, 'world/var/www/media')
 
 
 # Registration
-REGISTRATION_OPEN = True
+REGISTRATION_OPEN = False
 LOGIN_REDIRECT_URL = 'home'
 
 
