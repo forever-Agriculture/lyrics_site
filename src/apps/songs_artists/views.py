@@ -1,5 +1,4 @@
 # django imports
-from django.contrib.auth import authenticate, login
 from django.core.urlresolvers import reverse
 from django.shortcuts import get_object_or_404
 from django.views.generic import ListView, CreateView, UpdateView, \
@@ -7,7 +6,7 @@ from django.views.generic import ListView, CreateView, UpdateView, \
 from django.views.generic.detail import DetailView
 
 # app imports
-from songs_artists.tools import CancelButtonMixin
+from songs_artists.mixins import CancelButtonMixin
 from songs_artists.models import Band, Lyrics
 
 
@@ -37,7 +36,7 @@ class SongsListView(ListView):
     def get_context_data(self, **kwargs):
         # Call the base implementation first to get a context
         context = super().get_context_data(**kwargs)
-        # Add in the publisher
+        # Add in the artist
         context['artist'] = self.artist
         return context
 
@@ -105,7 +104,7 @@ class SongsUpdateView(CancelButtonMixin, UpdateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['artists'] = Band.objects.all()
+        context['bands'] = Band.objects.all()
         return context
 
 
